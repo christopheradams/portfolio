@@ -1,0 +1,56 @@
+%!TEX TS-program = xetex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[a4paper, twoside, openany, 12pt, showtrims]{memoir}
+
+%%%
+% Packages
+%%%
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+
+%%%
+% The Page
+%%%
+
+\semiisopage[12]
+
+\checkandfixthelayout
+\checkthelayout
+\fixthelayout
+
+\showtrimsoff
+
+%%%
+% Captions
+%%%
+
+\captionstyle[\raggedright]{}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\mainmatter
+
+Christopher Adams
+
+Portraits
+
+\clearpage
+
+\begin{figure}
+\includegraphics[width=\textwidth]{assets/img/49125980717_1c7d6c0928_k.jpg}
+\legend{Cyril Duval, Taipei, 2019}
+\end{figure}
+
+\clearpage
+
+\begin{figure}
+\adjincludegraphics[width=\textwidth, trim={{.27789\width} 0 {.27789\width} 0},clip]{assets/img/46278755204_05291da689_k.jpg}
+\legend{Su Misu, Taipei, 2019}
+\end{figure}
+
+\clearpage
+
+\end{document}
