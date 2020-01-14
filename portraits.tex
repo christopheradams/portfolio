@@ -43,6 +43,17 @@
 
 \captionstyle[\raggedright]{}
 
+%%%
+% Commands
+%%%
+
+\newcommand{\portrait}[4]{
+  \begin{figure}
+    \adjincludegraphics[width=\textwidth, trim={{#3\width} 0 {#4\width} 0},clip]{assets/img/#2}
+    \legend{#1}
+  \end{figure}
+}
+
 \begin{document}
 
 \pagestyle{empty}
@@ -55,18 +66,8 @@
 
 \clearpage
 
-\begin{figure}
-\includegraphics[width=\textwidth]{assets/img/49125980717_1c7d6c0928_k.jpg}
-\legend{Cyril Duval, Taipei, 2019}
-\end{figure}
+\portrait{Cyril Duval, Taipei, 2019}{49125980717_1c7d6c0928_k}{0}{0}
 
-\clearpage
-
-\begin{figure}
-\adjincludegraphics[width=\textwidth, trim={{.27789\width} 0 {.27789\width} 0},clip]{assets/img/46278755204_05291da689_k.jpg}
-\legend{Su Misu, Taipei, 2019}
-\end{figure}
-
-\clearpage
+\portrait{Su Misu, Taipei, 2019}{46278755204_05291da689_k}{.27789}{.27789}
 
 \end{document}
