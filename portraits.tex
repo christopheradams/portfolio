@@ -3,11 +3,27 @@
 
 \documentclass[a4paper, twoside, openany, 12pt, showtrims]{memoir}
 
+\title{Portraits}
+\author{Christopher Adams}
+
 %%%
 % Packages
 %%%
 \usepackage{graphicx}
 \usepackage[export]{adjustbox}
+\usepackage[hidelinks]{hyperref}
+
+%%%
+% Hyperref
+%%%
+\hypersetup{
+  pdfauthor=\theauthor,
+  pdftitle=\thetitle,
+  pdfsubject=Portfolio,
+  pdfkeywords=photography,
+  pdfstartview=FitH,
+  pdfpagelayout=TwoPageRight
+}
 
 %%%
 % The Page
@@ -33,9 +49,9 @@
 
 \mainmatter
 
-Christopher Adams
+\theauthor
 
-Portraits
+\thetitle
 
 \clearpage
 
