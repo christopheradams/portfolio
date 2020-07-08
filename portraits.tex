@@ -49,7 +49,9 @@
 
 \newcommand{\portrait}[4]{
   \begin{figure}
-    \adjincludegraphics[width=\textwidth, trim={{#3\width} 0 {#4\width} 0},clip]{assets/img/#2}
+    \def\lefttrim{#3}
+    \def\righttrim{#4}
+    \adjincludegraphics[width=\textwidth, trim={{\lefttrim\width} 0 {\righttrim\width} 0},clip]{assets/img/#2}
     \legend{#1}
   \end{figure}
 }
