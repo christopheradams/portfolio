@@ -57,10 +57,11 @@
 %%%
 
 \newcommand{\portrait}[4]{
+  \def\lefttrim{#3}
+  \def\righttrim{#4}
+
   \begin{figure}[t]
     \begin{minipage}[c][\textheight]{\textwidth}
-      \def\lefttrim{#3}
-      \def\righttrim{#4}
       \vfill
       \adjincludegraphics[width=\textwidth, trim={{\lefttrim\width} 0 {\righttrim\width} 0},clip]{assets/img/#2}
       \vfill
