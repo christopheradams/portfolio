@@ -62,7 +62,7 @@
 }
 
 \newcommand{\trimmed}[4]{
-  \photoblock{#1}{#2}{#3}{\fpeval{1 - #3 - 0.4442}}
+  \photoblock{#1}{#2}{\fpeval{#3 * 0.5558}}{\fpeval{1 -  0.4442 - (#3 * 0.5558)}}
 }
 
 \newcommand{\photoblock}[4]{
@@ -95,7 +95,7 @@
 
 \photograph{Item Idem, Taipei, 2019}{49125980717_1c7d6c0928_k}
 
-\trimmed{Su Misu, Taipei, 2019}{46278755204_05291da689_k}{.27789}
+\trimmed{Su Misu, Taipei, 2019}{46278755204_05291da689_k}{0.5}
 
 \photograph{Su Misu, Taipei, 2019}{46278755204_05291da689_k}
 
