@@ -56,7 +56,15 @@
 % Commands
 %%%
 
-\newcommand{\portrait}[4]{
+\newcommand{\photograph}[2]{
+  \photoblock{#1}{#2}{0}{0}
+}
+
+\newcommand{\trimmed}[4]{
+  \photoblock{#1}{#2}{#3}{#4}
+}
+
+\newcommand{\photoblock}[4]{
   \def\lefttrim{#3}
   \def\righttrim{#4}
 
@@ -84,10 +92,10 @@
 
 \part{}
 
-\portrait{Item Idem, Taipei, 2019}{49125980717_1c7d6c0928_k}{0}{0}
+\photograph{Item Idem, Taipei, 2019}{49125980717_1c7d6c0928_k}
 
-\portrait{Su Misu, Taipei, 2019}{46278755204_05291da689_k}{.27789}{.27789}
+\trimmed{Su Misu, Taipei, 2019}{46278755204_05291da689_k}{.27789}{.27789}
 
-\portrait{Su Misu, Taipei, 2019}{46278755204_05291da689_k}{0}{0}
+\photograph{Su Misu, Taipei, 2019}{46278755204_05291da689_k}
 
 \end{document}
