@@ -9,11 +9,7 @@
 %%%
 % Packages
 %%%
-\usepackage{xfp}
-\usepackage{graphicx}
-\usepackage[export]{adjustbox}
-\usepackage[hidelinks]{hyperref}
-\usepackage[sfdefault]{carlito}
+\usepackage{portfolio}
 
 %%%
 % Hyperref
@@ -25,59 +21,6 @@
   pdfkeywords=photography,
   pdfstartview=FitH,
   pdfpagelayout=TwoPageRight
-}
-
-%%%
-% The Page
-%%%
-
-\setlrmarginsandblock{0.1\stockwidth}{*}{1}
-\setulmarginsandblock{0.0833\stockwidth}{*}{1}
-
-\checkandfixthelayout
-\checkthelayout
-\fixthelayout
-
-\showtrimsoff
-
-%%%
-% Pagination
-%%%
-
-\aliaspagestyle{part}{empty}
-
-%%%
-% Captions
-%%%
-
-\captiontitlefont{\itshape}
-\captionstyle{\raggedright}
-
-%%%
-% Commands
-%%%
-
-\newcommand{\photograph}[2]{
-  \photoblock{#1}{#2}{0}{0}
-}
-
-\newcommand{\landtoport}[3]{
-  \photoblock{#1}{#2}{\fpeval{#3 * 0.5558}}{\fpeval{1 -  0.4442 - (#3 * 0.5558)}}
-}
-
-\newcommand{\photoblock}[4]{
-  \def\lefttrim{#3}
-  \def\righttrim{#4}
-
-  \begin{figure}[t]
-    \begin{minipage}[c][\textheight][c]{\textwidth}
-      \vfill
-      \adjincludegraphics[width=\textwidth, trim={{\lefttrim\width} 0 {\righttrim\width} 0},clip]{assets/img/#2}
-      \vfill
-      \legend{#1}
-    \end{minipage}
-  \end{figure}
-  \clearpage
 }
 
 \begin{document}
