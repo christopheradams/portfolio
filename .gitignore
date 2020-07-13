@@ -2,6 +2,7 @@ assets/img
 
 *.aux
 *.log
+*.lof
 *.out
 *.toc
 *.fdb_latexmk
