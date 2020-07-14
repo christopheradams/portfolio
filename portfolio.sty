@@ -38,6 +38,27 @@
 {Spectral}
 
 %%%
+% Book
+%%%
+
+\makeatletter
+\def\@maketitle{
+  \newpage
+  \vspace*{172pt}
+
+  {
+    \fontseries{el}\fontsize{72pt}{86pt}\selectfont
+
+    \noindent\@title
+  }
+
+  \vfill
+
+  \noindent{\itshape\@author, Taipei, \the\year}
+}
+\makeatother
+
+%%%
 % Pagination
 %%%
 
