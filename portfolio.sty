@@ -2,10 +2,10 @@
 % Packages
 %%%
 \usepackage{xfp}
+\usepackage{fontspec}
 \usepackage{graphicx}
 \usepackage[export]{adjustbox}
 \usepackage[hidelinks]{hyperref}
-\usepackage[sfdefault]{carlito}
 
 %%%
 % The Page
@@ -19,6 +19,20 @@
 \fixthelayout
 
 \showtrimsoff
+
+%%%
+% Fonts
+%%%
+
+\setmainfont[
+  Path = assets/fonts/Spectral/,
+  UprightFont = *-Medium,
+  ItalicFont = *-MediumItalic,
+  BoldFont = *-Bold,
+  BoldItalicFont = *-BoldItalic,
+  Ligatures = TeX,
+  Numbers = OldStyle]
+{Spectral}
 
 %%%
 % Pagination
