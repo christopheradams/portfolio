@@ -1,5 +1,5 @@
 # Christopher Adams - Portfolio
 
 ```
-latexmk -pvc -pdf portraits
+latexmk -pvc -xelatex portraits
 ```
